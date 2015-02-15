@@ -1,10 +1,11 @@
 ---
-title: "Reproducible Research: Peer Assessment 1"
+title: 'Reproducible Research: Peer Assessment 1'
 author: "BMc"
 date: "Sunday, February 15, 2015"
-output: 
+output:
   html_document:
-    keep_md: true
+    keep_md: yes
+    toc: yes
 ---
 
 
@@ -18,7 +19,7 @@ library(ggplot2)
 #### Unzip and read in csv of data
 The data file is read from the local working directory.  However, there are many records which are incomplete.  For this data analysis, we'll pare it down to just complete records while saving the full data set (this is needed for backfilling, which will occur at a later step).
 
-The data file was initially provided from https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip and can also be found in the current GitHub repository at: 
+The data file was initially provided from https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip and can also be found in the current GitHub repository at: https://github.com/coursera-bmc/RepData_PeerAssessment1/repdata%2Fdata%2Factivity.zip.
 
 ```{r}
 data <- read.csv(unz("repdata_data_activity.zip", "activity.csv"))

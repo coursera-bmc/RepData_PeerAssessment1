@@ -14,7 +14,7 @@ library(ggplot2)
 #### Unzip and read in csv of data
 The data file is read from the local working directory.  However, there are many records which are incomplete.  For this data analysis, we'll pare it down to just complete records while saving the full data set (this is needed for backfilling, which will occur at a later step).
 
-The data file was initially provided from https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip and can also be found in the current GitHub repository at: 
+The data file was initially provided from https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip and can also be found in the current GitHub repository at: https://github.com/coursera-bmc/RepData_PeerAssessment1/repdata%2Fdata%2Factivity.zip.
 
 
 ```r

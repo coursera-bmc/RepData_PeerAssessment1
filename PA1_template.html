@@ -57,6 +57,15 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <h4 class="date"><em>Sunday, February 15, 2015</em></h4>
 </div>
 
+<div id="TOC">
+<ul>
+<li><a href="#loading-and-preprocessing-the-data">Loading and preprocessing the data</a></li>
+<li><a href="#what-is-mean-total-number-of-steps-taken-per-day">What is mean total number of steps taken per day?</a></li>
+<li><a href="#what-is-the-average-daily-activity-pattern">What is the average daily activity pattern?</a></li>
+<li><a href="#inputing-missing-values">Inputing missing values</a></li>
+<li><a href="#are-there-differences-in-activity-patterns-between-weekdays-and-weekends">Are there differences in activity patterns between weekdays and weekends?</a></li>
+</ul>
+</div>
 
 <div id="loading-and-preprocessing-the-data" class="section level2">
 <h2>Loading and preprocessing the data</h2>
@@ -65,7 +74,7 @@ library(ggplot2)</code></pre>
 <div id="unzip-and-read-in-csv-of-data" class="section level4">
 <h4>Unzip and read in csv of data</h4>
 <p>The data file is read from the local working directory. However, there are many records which are incomplete. For this data analysis, we’ll pare it down to just complete records while saving the full data set (this is needed for backfilling, which will occur at a later step).</p>
-<p>The data file was initially provided from <a href="https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip">https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip</a> and can also be found in the current GitHub repository at:</p>
+<p>The data file was initially provided from <a href="https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip">https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip</a> and can also be found in the current GitHub repository at: <a href="https://github.com/coursera-bmc/RepData_PeerAssessment1/repdata%2Fdata%2Factivity.zip">https://github.com/coursera-bmc/RepData_PeerAssessment1/repdata%2Fdata%2Factivity.zip</a>.</p>
 <pre class="r"><code>data &lt;- read.csv(unz(&quot;repdata_data_activity.zip&quot;, &quot;activity.csv&quot;))
 summary(data)</code></pre>
 <pre><code>##      steps                date          interval     
